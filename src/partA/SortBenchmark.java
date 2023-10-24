@@ -6,7 +6,7 @@ public class SortBenchmark {
     
     private static void printBenchmark(String algorithmName, Shape[] shapes, char comparisonType) {
         long startTime = System.currentTimeMillis();
-      
+
         if (algorithmName.equals("Bubble Sort")) {
             Sort.bubbleSort(shapes, new Shape.ShapeComparator(comparisonType));
         } else if (algorithmName.equals("Insertion Sort")) {
